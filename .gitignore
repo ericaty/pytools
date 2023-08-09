@@ -1,0 +1,13 @@
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+.venv/
+*/crawls/
+/media/
+/static/
+*/logs/
+*/dbs/
+*/twistd.pid
+logs/
