@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mixii-tools"
+dynamic = ["version"]
+description = "mixii tools."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+authors = [
+    { name = "Ericaty", email = "ericaty@gmail.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = []
+
+[project.optional-dependencies]
+aldns = [
+    "aliyun-python-sdk-core>=2.13.36,<3.0",
+    "aliyun-python-sdk-alidns>=3.0.7,<4.0",
+    "requests>=2.31.0,<3.0",
+]
+
+[tool.coverage.run]
+source_pkgs = ["aliyun_dns"
+]
