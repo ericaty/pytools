@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "mixii-tools"
+name = "pytools"
 dynamic = ["version"]
-description = "mixii tools."
+description = "python tools."
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.8"
@@ -28,5 +28,4 @@ aldns = [
 ]
 
 [tool.coverage.run]
-source_pkgs = ["aliyun_dns"
-]
+source_pkgs = ["aliyun_dns"]
